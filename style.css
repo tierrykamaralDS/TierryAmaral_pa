@@ -1,0 +1,15 @@
+* {
+    /*Configuração dos elementos*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body{
+    /*configuração principal da página*/
+    background: #090d16;
+    color:#f8fafc;
+    
+}
