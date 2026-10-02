@@ -92,4 +92,8 @@ body::after {
 
     /*arredonda os cantos*/
     border-radius: 18px;
+
+    /* define o espaçamento interno*/
+    padding: 30px;
+    
  }
