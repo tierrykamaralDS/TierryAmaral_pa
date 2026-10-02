@@ -102,3 +102,8 @@ body::after {
     /*adiciona uma transição suave*/
     transition: 0.3s ease;
  }
+ .info-card:hover {
+    /*eleva o cartao quando o mouse passa sobre ele*/
+    transform: translateY(-5px);
+    
+ }
