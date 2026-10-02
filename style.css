@@ -95,5 +95,7 @@ body::after {
 
     /* define o espaçamento interno*/
     padding: 30px;
-    
+
+    /*alinha o conteudo a esquerda*/
+    text-align: left;
  }
