@@ -75,3 +75,9 @@ body::after {
    color: #fff;
    margin-bottom: 30px;
  }
+
+ .informações{
+    /* Organiza os cartões lado a lado*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+ }
