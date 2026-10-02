@@ -80,4 +80,7 @@ body::after {
     /* Organiza os cartões lado a lado*/
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
+    /* define o espaço entre os cartoes*/
+    gap: 20px;
  }
