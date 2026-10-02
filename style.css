@@ -84,3 +84,10 @@ body::after {
     /* define o espaço entre os cartoes*/
     gap: 20px;
  }
+
+ .info-card {
+    /*define o fundo e as bordas dos cartoes*/
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    
+ }
