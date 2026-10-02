@@ -1,15 +1,77 @@
-* {
-    /*Configuração dos elementos*/
+*{
+    /*configuração dos nossos elementos*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system,
-    BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-body{
-    /*configuração principal da página*/
+body {
+    /*Configuração principal da página*/
     background: #090d16;
-    color:#f8fafc;
-    
+    color: #f8fafc;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
 }
+
+body::before, body::after{
+/*cria os efeitos de luz no fundo*/
+content: '';
+position: absolute;
+width: 300px;
+height: 300px;
+border-radius: 50%;
+filter: blur(100px);
+z-index: 0;
+}
+
+body::before {
+    /*Posiciona a luz vermelha*/                
+    background: #dc2625;
+    top: 20%;
+    left: 25%;
+}
+
+body::after {
+   /*Posiona a luz azul*/
+   background: #2563eb;
+   bottom: 20%;
+   right: 25%;
+}
+
+.card {
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 40px 32px;
+    border-radius: 24px;
+    max-width: 420px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.conteudo {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+}
+ .conteudo h2 {
+   font-size: 2rem;
+   color: #fff;
+   margin-bottom: 30px;
+ }
