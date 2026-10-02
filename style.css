@@ -98,4 +98,7 @@ body::after {
 
     /*alinha o conteudo a esquerda*/
     text-align: left;
+
+    /*adiciona uma transição suave*/
+    transition: 0.3s ease;
  }
