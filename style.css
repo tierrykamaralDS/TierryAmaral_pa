@@ -56,6 +56,8 @@ body::after {
     text-align: center;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, border-color 0.3s ease;
+    /*NOVO: impede que o cartão seja comprimido */
+    flex-shrink: 0;
 }
 
 .card:hover {
@@ -109,4 +111,9 @@ body::after {
     /*altera a cor da borda para vermelho*/
     border-color: #dc2626;
     
+ }
+ .info-card h3 {
+    /*estiliza os titulos do Git e GitHub */
+    color: #f87171;
+    font-size: 1.4rem;
  }
